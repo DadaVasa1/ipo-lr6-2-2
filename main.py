@@ -1,7 +1,9 @@
 import random
 num =  [-15, -4, -2, -7, 0, 3, 5, 12, 7]
-width = int(input("Введите сколько столбцов у матрицы "))  
-height = int(input("Введите сколько строк у матрицы "))  
+width = random.randint(4, 8) 
+height = random.randint(4, 8) 
+
+
 matrix = []
 
 for i in range(height):
@@ -12,5 +14,5 @@ for i in range(height):
 
 for i in matrix:
     for el in i:
-        print(el, " ", end="")
+        print(el, " ", end="" )
     print()
